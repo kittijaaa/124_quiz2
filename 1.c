@@ -1,12 +1,9 @@
 #include<stdio.h>
 int main() {
-    long n=1,i,j=1,x=2,k=8,l,m,y=0 ;
-    if(n>=1&&n<=1000000)
+    long n=1,i,j,x,k,m=0,y=0 ;
     scanf("%ld",&n) ;
-        m=0 ;l=0 ;
             for(j=1;j<=n;j++){
-                l++ ; k=8;x=2;
-                for(;j>=k;x++,k=x*x*x){
+                for(k=8,x=2;j>=k;x++,k=x*x*x){
                   if(j%k==0){
                         m++ ;
                         break ;
@@ -21,7 +18,7 @@ int main() {
                   }
                 }
                 if(y!=1)
-                    printf("%ld",l-m) ;
+                    printf("%ld",j-m) ;
                     }
             }
     return 0 ;
